@@ -2,7 +2,7 @@
 .claude/
 
 # local helpers / build artifacts - never deploy
-_restructure.py
+_*.py
 wget-mirror.log
 verify-*.jpeg
 verify-*.png
