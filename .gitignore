@@ -1,5 +1,6 @@
 # editor / local config
 .claude/
+reference/
 
 # local helpers / build artifacts - never deploy
 _*.py
