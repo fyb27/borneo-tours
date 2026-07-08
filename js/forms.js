@@ -27,11 +27,11 @@ document.addEventListener('submit', function (e) {
       if (done) done.style.display = 'block';
       form.reset();
     } else {
-      if (fail) fail.style.display = 'block';
+      if (fail) { fail.style.display = 'block'; fail.setAttribute('data-diag', 'success:false -> ' + JSON.stringify(data)); fail.textContent = 'DIAG success:false -> ' + JSON.stringify(data); }
       if (window.console) console.error('Web3Forms error:', data);
     }
   }).catch(function (err) {
-    if (fail) fail.style.display = 'block';
+    if (fail) { fail.style.display = 'block'; fail.setAttribute('data-diag', 'catch -> ' + String(err)); fail.textContent = 'DIAG catch -> ' + String(err); }
     if (window.console) console.error('Web3Forms request failed:', err);
   }).finally(function () {
     if (btn && label !== null) { if (btn.value !== undefined) btn.value = label; else btn.textContent = label; }
