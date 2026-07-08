@@ -1,0 +1,15 @@
+# editor / local config
+.claude/
+
+# local helpers / build artifacts - never deploy
+_restructure.py
+wget-mirror.log
+verify-*.jpeg
+verify-*.png
+.playwright-mcp/
+
+# secrets / private (hard rule)
+handoff.md
+API.txt
+*.secret
+.env
