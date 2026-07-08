@@ -17,21 +17,24 @@ document.addEventListener('submit', function (e) {
   var waitTxt = btn ? btn.getAttribute('data-wait') : null;
   if (btn) { if (btn.value !== undefined) btn.value = waitTxt || 'Please wait...'; else btn.textContent = waitTxt || 'Please wait...'; }
 
+  var fd = new FormData(form);
+  fd.delete('g-recaptcha-response');  // Web3Forms free plan rejects submissions carrying a reCAPTCHA token (Pro feature)
+
   fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     headers: { 'Accept': 'application/json' },
-    body: new FormData(form)
+    body: fd
   }).then(function (r) { return r.json(); }).then(function (data) {
     if (data.success) {
       form.style.display = 'none';
       if (done) done.style.display = 'block';
       form.reset();
     } else {
-      if (fail) { fail.style.display = 'block'; fail.setAttribute('data-diag', 'success:false -> ' + JSON.stringify(data)); fail.textContent = 'DIAG success:false -> ' + JSON.stringify(data); }
+      if (fail) fail.style.display = 'block';
       if (window.console) console.error('Web3Forms error:', data);
     }
   }).catch(function (err) {
-    if (fail) { fail.style.display = 'block'; fail.setAttribute('data-diag', 'catch -> ' + String(err)); fail.textContent = 'DIAG catch -> ' + String(err); }
+    if (fail) fail.style.display = 'block';
     if (window.console) console.error('Web3Forms request failed:', err);
   }).finally(function () {
     if (btn && label !== null) { if (btn.value !== undefined) btn.value = label; else btn.textContent = label; }
