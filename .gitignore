@@ -14,3 +14,11 @@ handoff.md
 API.txt
 *.secret
 .env
+
+# private data / working docs / source assets - never deploy
+Ahrefs/
+google search console/
+high definition pictures/
+orou pictures/
+PICTURE URL.txt
+KEYWORD_TRACKER.xlsx
