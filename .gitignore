@@ -27,3 +27,8 @@ SEO_WORK_LOG.xlsx
 FULL-AUDIT-REPORT.md
 ACTION-PLAN.md
 *.orig
+PUBLISH-QUEUE.md
+_select*.jpg
+_select_index.txt
+_contact2.jpg
+__pycache__/
