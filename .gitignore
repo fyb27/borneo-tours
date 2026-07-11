@@ -36,3 +36,4 @@ __pycache__/
 # audit artifacts / sample screenshots
 .tmp_seo/
 sample-*.jpeg
+_cards.tmp
