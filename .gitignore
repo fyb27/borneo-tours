@@ -32,3 +32,7 @@ _select*.jpg
 _select_index.txt
 _contact2.jpg
 __pycache__/
+
+# audit artifacts / sample screenshots
+.tmp_seo/
+sample-*.jpeg

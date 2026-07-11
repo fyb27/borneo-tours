@@ -1,10 +1,10 @@
-# Orou Sapulot Tours
+# Borneo Outback Tours
 
 > Community-run eco-tourism operator in Sapulot, Sabah, Malaysian Borneo. Founded and run by the Murut community of Orou Sapulot. Jungle trekking, caving at Pungiton and Batu Punggul, river journeys, longhouse stays and Murut cultural experiences.
 
 ## About
-- Canonical name: Orou Sapulot Tours
-- Also known as: Borneo Outback Tours (trade name), borneo.tours (domain)
+- Canonical name: Borneo Outback Tours
+- Also known as: Orou Sapulot Tours, borneo.tours (domain)
 - Location: Sapulot, Sabah, Malaysia
 - Contact: +60 19-227 7077 (WhatsApp), https://www.borneo.tours/#contact
 
