@@ -3,6 +3,7 @@
 reference/
 
 # local helpers / build artifacts - never deploy
+_work/
 _*.py
 wget-mirror.log
 verify-*.jpeg
